@@ -12,6 +12,8 @@
     height: 70px;
 }
 
+
+/* ESCRITORIO Y PORTÁTIL */
 .contenedor{
     width: 95%;
     max-width: 1280px;
@@ -51,4 +53,31 @@ header, section{
 }
 
 
+/* TABLET */
+@media (max-width: 992px) {
+    nav{
+        height: 100px;
+        flex-flow: row wrap;
+    }
+    .logo{
+        flex: 100%;
+    }
+    .menu{
+        flex: 65%;    
+    }
+    .ingreso{
+        flex: 15%;    
+    }   
+}
 
+/* CELULAR */
+@media (max-width: 576px) {
+    nav{
+        height: 100px;
+    }
+    .logo, 
+    .menu, 
+    .ingreso{
+        flex: 100%;        
+    }
+}
